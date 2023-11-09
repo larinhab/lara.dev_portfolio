@@ -1,0 +1,170 @@
+/* -- LEFT SIDE --------------------------------lara.dev-------------------------*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    grid-area: 1 / 1 / 2 / 3;
+    grid-area: 1 / 2 / 2 / 3; 
+
+    border-bottom: .1rem solid var(--text-color);
+
+    margin-top: 10rem;
+    padding-bottom: 25rem;
+    padding-top: 9rem;
+}
+
+.box-aboutme {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    padding: 0rem 10rem;
+
+    max-width: 600px;
+}
+
+.box-aboutme h2 {
+    font-size: 4rem;
+    margin: .9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 4s steps(30)  alternate;
+}
+
+.box-aboutme h2 span {
+    padding-right: 1rem;
+    border-right: 5px solid var(--text-color);
+    border-radius: 5px;
+    animation: blink 800ms infinite;
+}
+
+@keyframes typewriter {
+        from {
+          width: 0%;
+        }
+        to {
+          width: 80%;
+        }
+}
+
+@keyframes blink {
+    from {
+        border-color: var(--text-color);
+        }
+    to {
+        border-color: transparent;
+        }
+}
+
+.box-aboutme p {
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+/* -- HABILIDADES --------------------------------lara.dev-------------------------*/
+
+.box-habilities ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.box-habilities li {
+    color: var(--text-color);
+    font-size: 45px;
+}
+
+/* -- RIGHT SIDE ----------------------------------lara.dev-------------------------------*/
+
+.box-personal-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 800px;
+}
+
+.flipper img {
+    width: 400px;
+    border-radius: 5px;
+}
+
+.flipper{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.flipper img{
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.flipper img:nth-child(2){
+    transform: rotateY(180deg);
+}
+
+.flipper:hover img:nth-child(2){
+    transform: rotateY(0deg);
+}
+
+.flipper:hover img:nth-child(1){
+    transform: rotateY(-180deg);
+}
+
+
+/*-------------PERSONAL-INFO----------------------------------------------------*/
+
+.personal-info {
+    position: absolute;
+    top: 190px;
+    right: 100px;
+
+    width: 400px;
+    height: 525px;
+
+    border-left: 1px solid var(--text-color);
+    padding-left: 7rem;
+}
+
+
+.personal-info h3 {
+    font-size: 2.5rem;
+    text-align: start;
+}
+
+.personal-info p {
+    font-size: 1.5rem;
+    text-align: start;
+    padding-top: 2rem;
+}
+
+.personal-info p:nth-child(3),
+.personal-info p:nth-child(10),
+.personal-info p:nth-child(12) {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+

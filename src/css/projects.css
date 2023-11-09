@@ -1,0 +1,114 @@
+/* -- PROJETOS -------------------------------lara.dev-----------------------------*/
+
+.box-projects {
+    max-width: 100%;
+    margin: 5rem auto;
+    padding: 5rem;
+    height: 900px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    border-bottom: .1rem solid var(--text-color);
+}
+
+.box-projects h2 {
+    font-size: 3rem;
+    margin-bottom: 7rem;
+}
+
+.projects  {
+   /* display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 100px; */
+
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin-top: 20rem;
+
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+
+    transform-style: preserve-3d;
+    animation: slid 30s linear infinite;
+}
+
+.projects span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+}
+
+.projects span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 2s;
+  }
+
+  .projects span:hover img {
+    transform: translateY(-50px) scale(1.2);
+  }
+
+  .projects a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+  }
+
+  @keyframes slid {
+    0% {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+      transform: perspective(1000px) rotateY(360deg);
+    }
+  }
+
+.animate {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    max-width:fit-content;
+}
+
+#more {
+    overflow: hidden;
+    margin-top: 15rem;
+    padding: .4rem;
+
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 2rem;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+#more:hover {
+    transition: .2s;
+    box-shadow: 0 0 5px #ffffff,
+    0 0 25px #ffffff,
+    0 0 50px #ffffff,
+    0 0 200px #ffffff;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}

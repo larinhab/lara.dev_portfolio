@@ -1,0 +1,110 @@
+/* -- CONTACT ME -------------------------------lara.dev-----------------------------*/
+
+.container-contact-me {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    grid-area: 1 / 1 / 2 / 3;
+    grid-area: 1 / 2 / 2 / 3; 
+}
+
+.box-contact-me {
+    margin: 0 auto;
+    padding: 5rem 5rem;
+}
+
+.box-contact-me img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 465px;
+}   
+
+.box-form {
+    margin: 0 auto;
+    padding: 5rem 5rem;
+}
+
+
+.box-form form {
+    width: 900px;
+    height: 800px;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+.box-form h2 {
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    
+}
+
+.box-form h3 {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.box-form label {
+    justify-content: center;
+    font-size: 2rem;
+    padding: .8rem;
+    margin-left: -1rem;
+}
+
+.box-form input {
+    height: 20px;
+    width: 300px;
+    padding: 2rem;
+
+    border-radius: 5px;
+    border: none;
+    background-color: var(--text-color);
+
+}
+
+.box-form input:focus {
+    background-color: white;
+    outline: 2px solid rgb(112, 26, 26);
+}
+
+.box-form textarea {
+    width: 600px;
+    height: 137px;
+    background-color: var(--text-color);
+    border-radius: 5px;
+}
+
+.box-form textarea:focus {
+    background-color: white;
+    outline: 2px solid rgb(112, 26, 26);
+}
+
+.box-form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 2rem;
+    padding: .6rem;
+    max-width: 100px;
+
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.box-form button:hover {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    outline: 1px solid var(--text-color);
+
+    transition: .2s;
+}
+

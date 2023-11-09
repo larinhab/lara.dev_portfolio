@@ -1,211 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/translate.css">
+    <link rel="stylesheet" href="./src/css/projects.css">
+    <link rel="stylesheet" href="./src/css/contactme.css">
+
+    <link rel="stylesheet" href="./src/css/footer.css">
     <link rel="stylesheet" href="./src/css/responsive.css">
-    <script src="./src/js/script.js" defer> </script>
+
+    <link rel="shortcut icon" href="./src/assets/favicon-32x32.png" type="image/x-png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,400;10..48,700&display=swap" rel="stylesheet">
-
-  <title><Lara.Dev></title>
-</head>
-<header>
-  <div class="container-header">
-   <nav>
-    <div class="logo">
-      <img id="logo" src="./src/assets/logodev .gif" alt="Logo <Lara.Dev>" autoplay loop>
     
-        <ul class="header-list">
-             <li>  <a href="#about-me" target="_top"> Início </a> </li>
-             <li>  <a href="#about-me" target=""> Sobre mim </a> </li>  
-            <li>  <a href="#projects" target=""> Projetos </a></li> 
-            <li>  <a href="#future" target=""> Objetivos / Metas</a></li>
-            <li>  <a href="#footer"> Entre em contato</a></li>  
-        </ul>
-            </div>
-        </nav>
-  </div>
-</header>
-</head>
 
+    <title>Portfólio Lara.Dev</title>
+</head>
 <body>
-    <main>
-      <section class="sidebar">
-        <aside>
-        <div class="sidebar-img">
-            <img class="photo" src="./src/assets/eugremio.jpeg" alt="Foto de Lara.Dev de camiseta do Grêmio em um dia ensolarado, sorrindo">
-            <img class="photo" src="./src/assets/euformal.jpeg" alt="Foto de Lara.Dev de vestido branco, formal.">
+    <div id="page">
+        <header>
+            <nav>
+                <figure id="logo-nav">
+                    <img class="logo" src="./src/assets/logodev .gif" alt="Logo <Lara.Dev>" autoplay loop>
+                </figure>
+                <ul class="nav-list">
+                    <li>  <a href="header" target="" id="header"> Header </a> </li>
+                    <li>  <a href="projects" target=""> Projects </a></li> 
+                    <li>  <a href="contact" target=""> Contact me </a></li>
+                </ul>
+                <div id="switch" onclick="toggleMode()"> 
+                    <button></button>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
 
-        <ul class="personal-info">
-            <li>
-                Idade/Age: 28<br>
-                RG > 7065438603 - SSP/RS  <br>
-                CPF > 851.226.370-91 <br>
-                CNH > 05982267691 
-            </li>
-            <li>
-                Cidade/City > Santa Cruz do Sul, Rio Grande do Sul.
-            </li>
-            <li>
-                Carteira de Trabalho>  3955210. <br>
-                Série> 0040/RS <BR>
-                PIS/PASEP> 125.80232.55-0.
-            </li>
-            <li>
-                Sem filhos; Estado civil solteira; Com veículo próprio. 
-            </li>
-            </ul>
-
-            <div>
-                <h4 id="btn-email">larabviana@outlook.com </h4>
-            </div>
-            
-        </aside>
-        </div>
-    </section>
-
-    
-    <section class="aboutme">
-        <div class="container-about-me">
-            <h2>Sobre mim / About Me</h2>
-            <p>FRONT END DEVELOPER: HTML5 | CSS | JAVASCRIPT | TYPESCRIPT | REACT JS</p>
-
-        <div id="content">
-            <p id="texto-sobre">  
-                
-             </p>
-              <button id="btn-english" class="btn2" onclick="">Português BR</button>
-        </div>    
-   
-        <div class="hab">
-            <ul>
-                <li><ion-icon name="logo-html5"></ion-icon></li>
-                <li><ion-icon name="logo-css3"></ion-icon></li>
-                <li><ion-icon name="logo-nodejs"></ion-icon></li>
-                <li> <ion-icon name="logo-react"></ion-icon></li> 
-            </ul>
-        </div>
-    </div>
-</section>
-
+        <main>
+            <div class="grid">
+            <section id="container-aboutme">
+                <div class="box-aboutme">
+                    <h2>Hello World, call me <br><span>Lara Barbosa Viana</span></h2>
+                    <p>FRONT END DEVELOPER: HTML5 | CSS | JAVASCRIPT | TYPESCRIPT | REACT JS</p>
         
-        <section class="projects">
-            <h2>Últimos Projetos / Last Projects...</h2>
-            <div class="project">
-                    <a href="https://github.com/larinhab/Clone-Pag-Login-Insta" target="_blank" class="proj" style="background-image: url(./src/assets/1.png)"> 
-                        
-                <div class="overlay">Clone Insta</div>
-                    </a> 
-                
-                    <a href="https://github.com/larinhab/Site-de-Vendas1" target="_blank" class="proj" style="background-image: url(./src/assets/2.png)">
-                        
-                        <div class="overlay">Host Website</div>
-                    </a>
-        
-                    <a href="https://github.com/larinhab/Formulario-Venda-de-Carro" target="_blank" class="proj" style="background-image: url(./src/assets/3.png)">
-                        
-                        <div class="overlay">Form to sell a veichle</div>
-                    </a>
-            
-                    <a href="https://github.com/larinhab/Calculator-Calculadora" target="_blank" class="proj" style="background-image: url(./src/assets/4.png)">
-                        
-                        <div class="overlay">Calculator</div>
-                    </a>
+                <div class="translate-box">
+                    <a href="#">
+                        <span></span><span></span>
+                        <span></span><span></span>
+                        <button id="btn-english" class="btn" onclick="">About me EN</button>
+                      </a>
+
+                    <div style="overflow: scroll; scroll-behavior: smooth;" id="translate-text">     
+                      <p  id="translate-text"></p>
+                    </div>
+                </div>    
+
+                    <div class="box-habilities">
+                        <ul>
+                            <li><ion-icon name="logo-html5"></ion-icon></li>
+                            <li><ion-icon name="logo-css3"></ion-icon></li>
+                            <li><ion-icon name="logo-nodejs"></ion-icon></li>
+                            <li> <ion-icon name="logo-react"></ion-icon></li> 
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="container-personal-info">
+                <div class="box-personal-info">
+                    <div class="flipper">                 
+                        <img src="./src/assets/eugremio.jpeg" alt="Lara em um dia ensolarado com camisa do grêmio">
+                        <img src="./src/assets/euformal.jpeg" alt="Lara de vestido branco formal">
+                    </div>
+                </div>
+
+            <div class="personal-info">
+                    <h3>Personal info:</h3>
                     
-                    <a href="https://github.com/larinhab/projecToDoList" target="_blank" class="proj" style="background-image: url(./src/assets/5.png)">
+                       <p> 28 years old<br></p>
+                       <p> DOCUMENTS: <br></p>
+                       <p> RG / Identity card number: 7065438603 - SSP/RS  <br></p>
+                       <p> CPF/ Social Security Mumber: 851.226.370-91 <br></p>
+                       <p> CNH / Driver's license: 05982267691 <br></p>
+                       <p> Carteira de Trabalho:  3955210. <br></p>
+                       <p> PIS/PASEP> 125.80232.55-0. <br></p>
+                       <p> Série> 0040/RS <BR></p>
+                       <p> Currently living in: <br></p>
+                       <p> Santa Cruz do Sul, Rio Grande do Sul. <br></p>
                         
-                        <div class="overlay">To do List</div>
-                    </a>
-
-                    <a href="https://github.com/larinhab/projectMarioBros" target="_blank" class="proj" style="background-image: url(./src/assets/6.png)">
-                        
-                        <div class="overlay">Mário Game Intro</div>
-                    </a>
-
-                    <a href="https://github.com/larinhab/MultiplicationTable" target="_blank" class="proj" style="background-image: url(./src/assets/7.png)">
-                        
-                        <div class="overlay">Tabuada</div>
-                    </a>
-
-                    <a href="https://github.com/larinhab/MultiplicationTable" target="_blank" class="proj" style="background-image: url(./src/assets/8.png)">
-                        
-                        <div class="overlay">Gerador de QR CODE</div>
-                    </a>
-
-                    <a href="https://github.com/larinhab/IMC-Calculator" target="_blank" class="proj" style="background-image: url(./src/assets/9.png)">
-                        
-                        <div class="overlay">IMC Calculator</div>
-                    </a>
-
-                    <a id="more" href="https://github.com/larinhab?tab=repositories">+ Projetos aqui   ...</a>
-            </div>
-      </section>
-      
-      <section class="future">
-        <div class="container-future"> 
-            <h2>Metas / Goals</h2>
-            <p>Me ajude a subir de nível!<br>Help me to scale up!</p>
-            
-            <video id="goals" src="./src/assets/junior.mp4" autoplay loop ></video>   
+                       <p> No kids; Single; With own transportation.</p> 
+                    
+                </div>
+            </section>
         </div>
 
-      </section>
+            <section id="container-projects">
+                <div class="box-projects">
+                    <h2>A FEW PERSONAL PROJECTS</h2>
+                    <div class="projects">
 
-    </main>
+                        <span style="--i:1">
+                            <a href="https://github.com/larinhab/Clone-Pag-Login-Insta" target="_blank" class="proj"> 
+                             <img src="./src/assets/1.png" alt="">                        
+                                <div class="overlay">Clone Insta</div>
+                            </a> 
+                        </span>
 
-    <footer>
-        <div class="container-footer">
-            <img id="logo-footer" src="./src/assets/logodev .gif" alt="Logo <Lara.Dev>" autoplay loop>
-                
-            <p> Contact me:</p>
-        <ul class="links">
-            <li>
-                <button class="btn-links"> 
-                    <a href="linkedin.com/in/lara-barbosa-viana-813428230/"> 
-                        <ion-icon name="logo-Linkedin"></ion-icon>
+                        <span style="--i:2">
+                          <a href="https://github.com/larinhab/Site-de-Vendas1" target="_blank" class="proj">
+                            <img src="./src/assets/2.png">
+                                <div class="overlay">Host Website</div>
+                            </a>
+                        </span>
+
+                        <span style="--i:3">
+                            <a href="https://github.com/larinhab/Formulario-Venda-de-Carro" target="_blan>k" class="proj"> 
+                            <img src="./src/assets/3.png">
+                                <div class="overlay">Form to sell a veichle</div>
+                            </a>
+                        </span>
+
+                        <span style="--i:4">
+                            <a href="https://github.com/larinhab/Calculator-Calculadora" target="_blank" class="proj">
+                            <img src="./src/assets/4.png">
+                                
+                                <div class="overlay">Calculator</div>
+                            </a>
+                        </span>
+
+                        <span style="--i:5">
+                            <a href="https://github.com/larinhab/projecToDoList" target="_blank" class="proj"> 
+                            <img src="./src/assets/5.png">
+                                
+                                <div class="overlay">To do List</div>
+                            </a>
+                        </span>
+
+                        <span style="--i:6">
+                            <a href="https://github.com/larinhab/projectMarioBros" target="_blank" class="proj" >
+                            <img src="./src/assets/6.png">
+                                
+                                <div class="overlay">Mário Game Intro</div>
+                            </a>
+                        </span>
+
+                        <span style="--i:7">
+                            <a href="https://github.com/larinhab/MultiplicationTable" target="_blank" class="proj"> 
+                            <img src="./src/assets/7.png">
+                                
+                                <div class="overlay">Tabuada</div>
+                            </a>
+                        </span>
+
+                        <span style="--i:8">
+                            <a href="https://github.com/larinhab/MultiplicationTable" target="_blank" class="proj" >
+                            <img src="./src/assets/8.png">
+                                
+                                <div class="overlay">Gerador de QR CODE</div>
+                            </a>
+                        </span>
+                        
+
+                    </div>
+                    <div class="animate">
+                    <a id="more" href="https://github.com/larinhab?tab=repositories">+ projects here
+                        <span></span><span></span>
+                        <span></span><span></span>
                     </a>
-                </button class="btn-links">
-            </li>
+                </div>
+                </div>
+                </div>
+            </section>
 
-            <li>
-                <button class="btn-links"> 
-                    <a href="https://github.com/larinhab?tab=repositories"> 
-                        <ion-icon name="logo-Github">
-                    </a> 
-                </button>
-            </li>    
+            <section class="container-contact-me">
+                <div class="box-contact-me">
+                    <figure>
+                        <img src="./src/assets/nobg.png" alt="Duas mulheres conversando com ideias e uma meta">
+                        <figcaption></figcaption>
+                </div>
 
-            <li>
-                <button class="btn-links">
-                    <a  href="https://www.facebook.com/larabviana/"> 
-                        <ion-icon name="logo-facebook"></ion-icon> 
-                    </a>
-                </button>
-            </li>              
+                <div class="box-form">
+                    <form action="">
+                        <h2>Send me your idea:</h2>
+                        <h3> <ion-icon name="mail-open-outline"></ion-icon>  larabviana@outlook.com</h3>
+                        
+                        <label for="name">Name:</label>
+                        <input  
+                        class="input" 
+                        type="text" 
+                        minlength="4" required>
 
-            <li>
-                <button class="btn-links">
-                    <a href="https://www.instagram.com/larabviana/"> 
-                        <ion-icon name="logo-Instagram">
-                    </a>
-                </button>
-            </li>
-            </ul>
+                        <label for="surname">Last Name:</label>
+                        <input  
+                        class="input" 
+                        type="text" required>
 
-            <p> Feito com  <ion-icon name="heart"></ion-icon>  por Lara.</p>
+                        <label for="number">Number:</label>
+                        <input  
+                        class="input" 
+                        type="number" required>
 
-        </div>
-    </footer>
+                        <label for="email">Your email:</label>
+                        <input  
+                        class="input" 
+                        type="email" required>
+                        <br>
 
+                        <label for="idea">What's you project idea?</label>
+                        <textarea id="textarea"></textarea>
+
+                        <button  
+                        class="button"
+                        form="myform"
+                        type="submit"> 
+                        Send</button>
+
+                        
+                    </form>
+                </div>
+            </section>
+
+            <footer id="container-footer">
+                <div class="box-footer">
+                    <figure id="logo-footer">
+                    <img class="logo" src="./src/assets/logodev .gif" alt="Logo <Lara.Dev>" autoplay loop>
+                    </figure>
+
+                    <p> Contact me:</p>
+                    <ul class="links">
+                        <li>
+                            <a href="linkedin.com/in/lara-barbosa-viana-813428230/"> 
+                                <ion-icon name="logo-Linkedin"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                             <a href="https://github.com/larinhab?tab=repositories"> 
+                                <ion-icon name="logo-Github">
+                            </a> 
+                        </li>           
+                        <li>
+                            <a href="https://www.facebook.com/larabviana/"> 
+                                <ion-icon name="logo-facebook"></ion-icon> 
+                            </a>
+                        
+                        </li>              
+                        <li>
+                            <a href="https://www.instagram.com/larabviana/"> 
+                                <ion-icon name="logo-Instagram">
+                            </a>
+                        
+                        </li>
+                    </ul>
+                    <br>
+                    <p> Desenvolvido com  <ion-icon name="heart"></ion-icon>  por Lara.</p>
+        
+                </div>
+            </footer>
+        </main>
+    </div>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-    <script src="./src/js/script.js"> </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./src/js/script.js" defer type="module"> </script>
 </body>
 </html>

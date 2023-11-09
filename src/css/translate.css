@@ -1,0 +1,156 @@
+/* -- sobre mim translate --------------------------lara.dev-----------------------*/
+
+
+.translate-box {
+    max-width: 600px;
+    font-size: 1.5rem;
+}
+
+.translate-box button{
+    background-color: transparent;
+    color: var(--text-color);
+    
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.translate-box a {
+    position: relative;
+    display: inline-block;
+
+    padding: .5rem;
+    margin: 2rem 0;
+
+    color: var(--text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+
+    margin-right: 50px;
+    border-radius: 5px;
+}
+
+.translate-box a:hover,
+.animate a:hover {
+    background: var(--bg-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 5px #ffffff,
+        0 0 25px #ffffff,
+        0 0 50px #ffffff,
+        0 0 200px #ffffff;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.translate-box a:nth-child(1),
+.animate a:nth-child(1) {
+    filter: hue-rotate(270deg);
+}
+
+.translate-box a:nth-child(2),
+.animate a:nth-child(2) {
+    filter: hue-rotate(110deg);
+}
+
+.translate-box a span,
+.animate a span  {
+    position: absolute;
+    display: block;
+}
+
+.translate-box a span:nth-child(1),
+.animate a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffffff);
+    animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.translate-box a span:nth-child(2),
+.animate a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,
+            transparent, #ffffff);
+    animation: animate2 2s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+a span:nth-child(3), 
+.animate a span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #ffffff);
+    animation: animate3 2s linear infinite;
+    animation-delay: 0.50s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+
+.translate-box a span:nth-child(4),
+.animate a span:nth-child(4)  {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #ffffff);
+    animation: animate4 2s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+#translate-text {
+    display: none;
+    scrollbar-width: thin;
+    scrollbar-color: #333333 #DFE9EB;
+}
